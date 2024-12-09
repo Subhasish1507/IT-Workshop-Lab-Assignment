@@ -1,0 +1,16 @@
+
+# program to find the exponentiation of a list of numbers
+
+#Function to find exponentiation of a list
+def exponentiate_list(numbers , exponent):
+    return [i ** exponent for i in numbers]
+
+#Taking input list and exponent from user
+numbers = list(map(int,input("Enter the list numbers (enter space to separate ): ").split()))
+exponent = int(input("Enter the exponent : "))
+
+#Calling the function
+result = exponentiate_list(numbers,exponent)
+
+#Print the result
+print(f"Exponentiation of list {numbers} with exponent {exponent} is {result}")
