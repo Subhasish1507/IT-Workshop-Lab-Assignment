@@ -1,0 +1,16 @@
+
+# Program to find the exponentiation of a number
+
+#Function for exponentiation
+def exponentiation(base,exponent):
+    return base ** exponent
+
+# Taking base and exponent from user
+base = int(input("Enter the base : "))
+exponent = int(input("Enter the exponent : "))
+
+#Calling exponentiation function
+result = exponentiation(base,exponent)
+
+#Print the result
+print(f"{base} raised to the power {exponent} is ",result)
