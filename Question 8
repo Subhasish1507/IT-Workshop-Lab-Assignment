@@ -1,0 +1,24 @@
+
+#Program to find the no of 100 , 50 , 10 currency notes in an amount
+
+#Function to find the no of 100 , 50 , 10 currency notes
+def calculate_notes(amount):
+    hundred = 0 #Initialize them with 0
+    fifty  = 0
+    ten = 0
+    hundred = amount // 100
+    amount = amount%100
+    fifty = amount // 50
+    amount = amount % 50
+    ten = amount // 10
+    
+    return hundred , fifty , ten
+
+#Taking amount from user
+amount = int(input("Enter the no amount to be withdrawn  : "))
+
+hundred , fifty , ten = calculate_notes(amount)
+
+print(f"No of 100 denomination notes are {hundred}")
+print(f"No of 50 denomination notes are {fifty}")
+print(f"No of 10 denomination notes are {ten}")
