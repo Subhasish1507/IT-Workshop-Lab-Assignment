@@ -1,0 +1,24 @@
+
+# program to calculate fine in library
+
+def calculate_fine(days_late):
+    if days_late > 30:
+        return "Membership cancelled. You have returned the book after 30 days."
+    elif days_late > 10:
+        fine = (days_late - 10) * 5  # Fine is 5 rupees for each day beyond 10 days
+        return f"Fine: {fine} rupees"
+    elif days_late >= 6:
+        fine = (days_late - 5) * 1  # Fine is 1 rupee for each day between 6 and 10 days
+        return f"Fine: {50 + fine} paise"
+    elif days_late >= 1:
+        fine = days_late * 0.50  # Fine is 50 paise for each day between 1 and 5 days
+        return f"Fine: {fine} paise"
+    else:
+        return "No fine. Book returned on time."
+
+# Input the number of days the book is returned late
+days_late = int(input("Enter the number of days the book is late: "))
+
+# Display message
+note = calculate_fine(days_late)
+print(note)
