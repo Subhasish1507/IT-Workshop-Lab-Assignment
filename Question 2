@@ -1,0 +1,15 @@
+
+# Biggest and smallest of given 3 numbers 
+
+#Taking input of three numbers from user
+num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+num3 = int(input("Enter third number : "))
+
+#Finding largest and smallest
+largest = max(num1,num2,num3)
+smallest = min(num1,num2,num3)
+
+#Display it
+print("The biggest number among three numbers is : ",largest)
+print("The smallest number among three numbers is : ",smallest)
