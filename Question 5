@@ -1,0 +1,16 @@
+
+#Program to find the GCD of two numbers
+
+#Function to find GCD
+def gcd(a,b):
+    while b != 0:
+        a , b = b , a%b
+    return a
+
+#Taking inputs from user
+num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+
+# Calling function to find GCD
+gcdNum = gcd(num1,num2)
+print(f"The greatest common divisor among {num1} and {num2} is : ",gcdNum)
