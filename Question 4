@@ -1,0 +1,15 @@
+
+#Program to find the Fibonacci series
+
+#Function to print fibonacci series upto n terms
+def fibonacci(n):
+    if n<=0 :
+        return
+    a , b = 0,1 #Initially a is assigned to 0 and b assigned 1
+    for i in range(n):
+        print(a,end=" , ")
+        a , b = b,a+b  #Update a and b value 
+
+#Taking the no of terms from user
+num = int(input("Enter the no of terms "))
+fibonacci(num)
